@@ -72,7 +72,7 @@ $(document).ready(function() {
         } else {
             $('#ispis').html('Poruka je poslata.  Hvala!');
         }
-    })
+    });
 
     $('#kupiDugme').on('click', function() {
         var regKarteBroj = /^[1-9][0-9]{0,2}$/;
@@ -99,5 +99,10 @@ $(document).ready(function() {
         } else {
             $('#karteIspis').html('Ukupna cena: ' + (1000 * karteBroj) + ' dinara. Karte poslate na email: ' + karteEmail);
         }
-    })
+    });
+
+    $('.prikazi-vise').on('click', function() {
+        $('.skriveni-tekst').addClass('vidljiv')
+        $('.prikazi-vise').css('display', 'none');
+    });
 })

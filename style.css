@@ -1957,3 +1957,17 @@ ul {
         width: 40%;
     }
 }
+
+.prikazi-vise {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.skriveni-tekst {
+    display: none;
+}
+
+.skriveni-tekst.vidljiv {
+    display: block;
+}
