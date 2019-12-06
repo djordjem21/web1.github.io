@@ -1,0 +1,297 @@
+* { margin: 0; padding: 0; }
+
+body {
+	font-family: 'Slabo 27px', serif;
+}
+
+#okvir {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #006536;
+}
+
+#navigacija ul {
+	list-style-type: none;
+	display: flex;
+}
+
+#navigacija ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #006536;
+	display: block;
+	padding: 0 30px;
+}
+
+#navigacija ul li a.aktivan, #navigacija ul li a:hover {
+	color: #BE0411;
+}
+
+#pocetna-slika {
+	position: relative;
+	color: #006536;
+}
+
+#pocetna-slika h1 {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	z-index: 2;
+	font-size: 60px;
+}
+
+#pocetna-slika img {
+	display: block;
+}
+
+#pocetna-slika h1 span {
+	display: block;
+	font-size: 100px;
+	margin-left: 100px;
+}
+
+#pocetna-slika p {
+	position: absolute;
+	top: 400px;
+	left: 0;
+	z-index: 2;
+	font-size: 120px;
+}
+
+#slike-naslovna {
+	dispay: flex;
+	justify-content: space-between;
+}
+
+#linkovi: {
+	text-align: center;
+}
+
+#link-galerija, #link-meni {
+	text-decoration: none;
+	color: #fff;
+	background: #006536;
+	padding: 10px 40px;
+}
+
+#naslov {
+	text-align: center;
+	margin: 40px 0 20px 0;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.galerija-red {
+	display: flex;
+}
+
+.galerija-red .slika {
+	width: 50%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.galerija-red .slika .slika-okvir {
+	height: 252px;
+}
+
+.galerija-red .slika img:hover {
+	animation-name: moja-animacija;
+    animation-duration: 1s;
+}
+
+.galerija-red .slika .galerija-naziv {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#meni {
+	width: 800px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#meni table {
+	width: 100%;
+	border-collapse: collapse;
+	border-bottom: 2px solid #006536;
+}
+
+#meni table thead tr {
+	background-color: #006536;
+	color: #fff;
+	font-size: 18px;
+}
+
+#meni table thead tr th {
+	padding: 10px 0;
+}
+
+#meni table tbody tr td:nth-child(1) {
+	padding-left: 10px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#meni table tbody tr:nth-child(odd){
+	background-color: #f2f2f2;
+}
+
+#meni table tbody tr:hover {background-color: #ddd;}
+
+#meni table tbody tr td {
+	padding: 10px 0;
+}
+
+#meni table td .dodaci {
+	font-size: 14px;
+	padding-left: 20px;
+	padding-top: 10px;
+	display: block;
+	font-weight: normal;
+}
+
+#meni table tr .cene {
+	width: 100px;
+	text-align: center;
+}
+
+#kontakt-okvir {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#informacije, #telefoni {
+	margin: 0 50px;
+	text-align: center;
+}
+
+#kontakt-okvir h3 {
+	font-size: 24px;
+	margin: 20px 0;
+}
+
+#kontakt-okvir p {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+#kontakt-forma {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 50px;
+}
+
+#kontakt-informacije {
+	padding: 0 50px;
+}
+
+#kontakt-forma input[type="text"], #kontakt-forma input[type="email"] {
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	outline: none;
+	padding: 10px 5px;
+	box-sizing: border-box;
+}
+
+#kontakt-forma select {
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	outline: none;
+	padding: 10px 5px;
+}
+
+#kontakt-forma textarea {
+	display: block;
+	width: 100%;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+	outline: none;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	height: 150px;
+}
+
+#kontakt-forma input[type="submit"] {
+	border: none;
+	background: #006536;
+	color: #fff;
+	padding: 10px 40px;
+	cursor: pointer;
+}
+
+#kontakt-informacije {
+	text-align: center;
+}
+
+#o-autoru-okvir {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+#o-autoru-okvir img {
+	display: block;
+}
+
+#autor-slika, #autor-opis {
+	width: 50%;
+}
+
+#autor-opis {
+	text-align: center;
+}
+
+#autor-opis h3 {
+	font-size: 24px;
+	margin: 20px 0 40px 0;
+}
+
+#autor-opis p {
+	font-size: 18px;
+	padding: 0 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+footer {
+	border-top: 2px solid #006536;
+}
+
+#copyright {
+	padding: 30px 0;
+}
+
+#copyright p {
+	text-align: center;
+}
+
+#copyright p a {
+	text-decoration: none;
+	color: #006536;
+}
+
+#copyright p span {
+	margin: 0 10px;
+}
+
+@keyframes moja-animacija {
+    50%  {width: 100%;}
+    100% {width: auto;}
+}
