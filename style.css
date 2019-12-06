@@ -1,3 +1,5 @@
+/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+
 html {
 	box-sizing: border-box
 }
@@ -548,6 +550,15 @@ a {
 	background-color: rgba(0, 0, 0, 0.4)
 }
 
+.modal-content {
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	width: 600px
+}
+
 .bar {
 	width: 100%;
 	overflow: hidden
@@ -826,6 +837,10 @@ a {
 }
 
 @media (max-width:600px) {
+	.modal-content {
+		margin: 0 10px;
+		width: auto!important
+	}
 	.modal {
 		padding-top: 30px
 	}
@@ -856,12 +871,18 @@ a {
 }
 
 @media (max-width:768px) {
+	.modal-content {
+		width: 500px
+	}
 	.modal {
 		padding-top: 50px
 	}
 }
 
 @media (min-width:993px) {
+	.modal-content {
+		width: 900px
+	}
 	.hide-large {
 		display: none!important
 	}
@@ -1940,6 +1961,7 @@ ul {
 #animatedModal .modal-content {
     text-align: center;
     color: #fff;
+    background-color: #009688;
 }
 #animatedModal .modal-content h2 {
     font-size: 18px;
